@@ -1,3 +1,5 @@
+// visibilidade_encapsulamento/carteiraDigital.js
+
 class CarteiraDigital {
   #titular;
   #saldo;
@@ -34,7 +36,7 @@ class CarteiraDigital {
         this.#saldo -= valor;
         console.log(`Saque de R$ ${valor.toFixed(2)} realizado.`);
       } else {
-        console.log(`Erro: Saldo insuficiente. Saldo atual: R$ ${this.#saldo.toFixed(2)}`);
+        console.log(`Erro: Saldo insuficiente. Saldo: R$ ${this.#saldo.toFixed(2)}`);
       }
     } else {
       console.log('Erro: Valor inválido.');
